@@ -30,7 +30,7 @@
 			<a class="header__phone header__phone_ru" href="tel:+86188265774">+ 8 (618) 826-57-74</a>
 			<a class="header__phone header__phone_cn" href="tel:+85264522937">+ 8 (526) 452-29-37</a>
 		</div>
-		<button class="header__order-btn">Оставить заявку</button>
+		<button class="header__order-btn" data-modal="contact-form">Оставить заявку</button>
 	</div>
 	<h1 class="header__title">Организация поставок товара<br> и оборудования <span>из Китая «под ключ»</span><br class="header__title-break"> в Россию, Европу и СНГ</h1>
 	<div class="header__affirmations">
@@ -51,7 +51,7 @@
 		<span class="troubles__section-title">Проблемы</span>
 		<div class="troubles__inner inner">
 			<div class="troubles__order">
-				<button class="troubles__btn order-btn">
+				<button class="troubles__btn order-btn" data-modal="contact-form">
 					<span>Получить консультацию</span>
 					<span>Бесплатно</span>
 				</button>
@@ -205,7 +205,7 @@
 		<div class="trust__inner inner">
 			<h2 class="trust__title title title_white"><span>Доверьте нашей компании закупку и доставку товара из Китая</span></h2>
 			<div class="trust__side">
-				<button class="trust__button order-btn order-btn_white">
+				<button class="trust__button order-btn order-btn_white" data-modal="contact-form">
 					<span>Оставить заявку</span>
 					<span>Бесплатно</span>
 				</button>
@@ -215,6 +215,47 @@
 		<div class="trust__airplane"><img src="./images/airplane-trust.png" alt=""></div>
 	</div>
 </section>
+
+<section class="about">
+	<span class="about__section-title">Кто мы?</span>
+	<div class="about__items inner">
+		<div class="about__item">
+			<h2 class="title">Компания CTS-Trade</h2>
+		</div>
+		<div class="about__item">
+			<div class="about__property">
+				<span>> 5 лет</span>
+				<span>опыта в сфере</span>
+			</div>
+			<div class="about__property">
+				<span>> 3400</span>
+				<span>отправок за 2021 год</span>
+			</div>
+			<div class="about__property">
+				<span>1000$</span>
+				<span>мин. сумма контракта</span>
+			</div>
+			<div class="about__property">
+				<span>87%</span>
+				<span>повторных обращений</span>
+			</div>
+		</div>
+		<div class="about__item">
+			<p>Офис нашей компании CTS-Trade <span>находится в Китае (Шэньчжэнь) –</span> мировом торговом и финансовом центре.</p>
+		</div>
+		<div class="about__item">
+			<p>В нашем штате 2 сотрудника из России и 3 из Китая, что <span>исключает сложности при общении</span> с клиентами, поставщиками и производителями.</p>
+		</div>
+		<div class="about__item">
+			<p><span>Мы работаем официально:</span> имеем лицензию на экспорт товаров из Китая и работаем по договору.</p>
+		</div>
+	</div>
+</section>
+
+
+
+
+
 
 <footer class="footer">
 	<div class="container">
@@ -250,7 +291,7 @@
 		</div>
 	</div>
 </footer>
-<button class="order-btn order-btn_fly">
+<button class="order-btn order-btn_fly" data-modal="contact-form">
 	<span>Оставить заявку</span>
 	<span>Бесплатно</span>
 </button>
@@ -258,3 +299,46 @@
 <script src="common.js"></script> 
 </body> 
 </html> 
+<div class="modal__hidden">
+	<div id="contact-form">
+		<form class="form form_modal" action="./" data-nameplate="Бесплатно">
+			<h2 class="form__title title">Оставьте заявку</h2>
+			<p class="form__note">Заполните поля ниже, и наш менеджер свяжется с Вами в ближайшее время.</p>
+			<div class="form__fields">
+				<div class="form__field">
+					<select class="form__field-select">
+						<option>Поиск товаров и поставщиков</option>
+						<option>Проверка компании поставщика</option>
+						<option>Проверка товара на соответствие</option>
+						<option>Официальная закупка товара</option>
+						<option>Общение с контрагентами из Китая</option>
+						<option>Таможенное оформление товара</option>
+					</select>
+				</div>
+				<div class="form__field">
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="form__field">
+					<input type="text" placeholder="E-mail">
+				</div>
+				<div class="form__field form__field_tel">
+					<select class="form__field-select">
+						<option>ru</option>
+						<option>cn</option>
+					</select>
+					<input type="text" placeholder="Телефон">
+				</div>
+				<div class="form__field form__field_agree">
+					<input type="checkbox" id="agree">
+					<label for="agree">Я согласен(а) на обработку моих персональных данных</label>
+				</div>
+				<button class="form__submit" type="submit"><span>Оставить заявку</span></button>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+
+
