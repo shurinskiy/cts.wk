@@ -565,14 +565,16 @@
 			<h2 class="form__title title">Оставьте заявку</h2>
 			<p class="form__note">Заполните поля ниже, и наш менеджер свяжется с Вами в ближайшее время.</p>
 			<div class="form__fields">
-				<div class="form__field">
-					<select class="form__field-select select">
+				<div class="form__field form__field_serv">
+					<select class="select">
 						<option>Поиск товаров и поставщиков</option>
 						<option>Проверка компании поставщика</option>
 						<option>Проверка товара на соответствие</option>
 						<option>Официальная закупка товара</option>
 						<option>Общение с контрагентами из Китая</option>
 						<option>Таможенное оформление товара</option>
+						<option>Доставка товара из Китая</option>
+						<option>Сопровождение сделок</option>
 					</select>
 				</div>
 				<div class="form__field">
@@ -582,16 +584,16 @@
 					<input type="text" placeholder="E-mail">
 				</div>
 				<div class="form__field form__field_tel">
-					<select class="form__field-select select">
+					<select class="select">
 						<option>ru</option>
 						<option>cn</option>
 					</select>
 					<input type="text" placeholder="Телефон">
 				</div>
-				<div class="form__field form__field_agree">
-					<input type="checkbox" id="agree">
-					<label for="agree">Я согласен(а) на обработку моих персональных данных</label>
-				</div>
+				<label class="form__field form__field_agree">
+					<input type="checkbox">
+					<span>Я согласен(а) на обработку моих персональных данных</span>
+				</label>
 				<button class="form__submit" type="submit"><span>Оставить заявку</span></button>
 			</div>
 		</form>
